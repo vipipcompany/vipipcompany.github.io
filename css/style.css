@@ -195,7 +195,7 @@ p {
 }
 .price-column .list li{
     font-weight:lighter;
-    color:#000000;
+    color: #000000!important;
     font-size:16px;
     border-bottom:1px solid #747C89;
     padding:10px 0px;
@@ -204,7 +204,7 @@ p {
     text-align: center;
     font-size:16px;
     background-color:white;
-    color:#000000;
+    color: #000000!important;
     
 }
 .price-text{
