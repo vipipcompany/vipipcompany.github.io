@@ -1,0 +1,349 @@
+/*
+ * A Design by GraphBerry
+ * Author: GraphBerry
+ * Author URL: http://graphberry.com
+ * License: http://graphberry.com/pages/license
+ */
+
+/* Table of content
+1.General - This is created general styles and overide some bootstrap classes.
+2.Layout
+ 2.1 Animations
+ 2.2 Buttons
+ 2.3 Thumbnail - overide bootstrap thumbnail and add mased efect
+ 2.4 Socail icons -style for social icons list
+3 Sections - definition for section and subsection
+ 3.1 Services
+ 3.2 Portfolio
+ 3.3 About
+ 3.4 Clients
+ 3.5 Price table
+ 3.6 Newsletter
+ 3.7 Contact
+ 3.8 Footer
+4 Responsive 
+**********************************************************************/
+
+/*
+1. General
+**********************************************************************/
+body {
+    background: #30d5c8;
+    font-family: 'porta';
+    color: #484646;
+    line-height:1.2em;
+    font-size:17px;
+    
+}
+.logo {
+    padding: 10px 0 0 20px;
+}
+a {
+    color:#181A1C;
+    text-decoration: none;
+}
+a:hover {
+    color: #FECE1A;
+    text-decoration:none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+h1 {
+    margin: 10px;
+}
+p {
+    padding: 10px;
+    font-weight: 100;
+    color: #fff;
+}
+
+/******
+2. Layout
+**********************************************************************/
+.centered {
+    margin-left:auto;
+    margin-right:auto;
+    float: none;
+    text-align: center;
+}
+
+
+/*
+2.1 Buttons - There are buttons on a transparent background, primary and secondary color background.
+**********/
+ .button,  .button:visited, .button:focus {
+    display:inline-block;
+    border:1px solid #181A1C;
+    color:#181A1C;
+    background-color:transparent;
+    padding:15px 30px;
+    font-size:20px;
+    line-height:auto;
+}
+.button:hover, .button:active{
+    background-color:#181A1C;
+    color:#fff;
+}
+.button-sp, .button-sp:visited, .button-sp:focus {
+    border:none;
+    background-color:#FECE1A;
+    color:#181A1C;
+}
+.button-sp:hover, .button-sp:active {
+    background-color:#181A1C;
+    color:#FECE1A;
+}
+.button-ps, .button-ps:visited, .button-ps:focus {
+    border:none;
+    background-color:#181A1C;
+    color:#30d5c8;
+}
+.button-ps:hover, .button-ps:active {
+    background-color:#30d5c8;
+    color:#181A1C;
+}
+
+
+/*
+3. Sections 
+***************************************************************************/
+
+.section .container {
+    padding-top:0px;
+}
+.section .title {
+    text-align: center;
+    padding:0px;
+    margin-bottom: 30px;
+}
+.section .title h3 {
+    line-height: 1.2;
+    font-family: 'porta';
+    font-size: 25px;
+    padding-top: -20px;
+    margin-bottom: -10px;
+    
+}
+.section .title > p {
+    font-size: 20px;
+    color: #FFF;
+    font-weight: lighter;
+}
+.primary-section {
+    background:#181A1C;
+}
+.primary-section .triangle {
+    border-top: 40px solid #FECE1A;
+}
+.primary-section .title {
+    border-bottom: 1px solid #FFF;
+}
+.primary-section, .primary-section .title p, .primary-section h3 {
+    color: #FECE1A;
+}
+.primary-section h1 {
+    color:#FFF;
+}
+.secondary-section {
+    background: #30D5C8;
+}
+.secondary-section .title {
+    border-bottom: 1px solid #191B1C;
+    margin-bottom: 20px;
+}
+.secondary-section h1, .secondary-section .title p {
+    color: #181A1C;
+}
+
+
+/*
+3.1 Price table
+******************************************************************/
+ .price-table {
+    width: 100%;
+    height: 50%;
+    padding: 0 0 0 0px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+.price-column {
+    background-color:white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding-bottom:20px;
+    margin:0 auto;
+    text-align:center;
+}
+.price-column h3 {
+    background-color:#181A1C;
+    text-transform:uppercase;
+    text-align: center;
+    font-family: 'porta';
+    color:#30d5c8;
+    padding:15px 0px;
+    font-size: 18px;
+    margin-top:-30px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+.price-column .list{
+    list-style:none;
+    margin:20px 50px;
+}
+.price-column .list li{
+    font-weight:lighter;
+    color:#4a4e54;
+    font-size:16px;
+    border-bottom:1px solid #747C89;
+    padding:10px 0px;
+}
+.price-column .list li.price {
+    text-align: center;
+    font-size:16px;
+    background-color:white;
+    color:#4a4e54;
+    
+}
+.price-text{
+    margin:30px 0 20px;
+    font-size:20px;
+    color: #181A1C;
+    font-weight:normal;
+}
+
+
+4 Responsible
+********************************************************************/
+ @media (min-width: 1200px) {
+    .thumbnail .more {
+        margin-left:-41px;
+        width:80px;
+        height:80px;
+        border-radius:40px;
+        line-height: 80px;
+    }
+}
+@media (max-width: 979px) {
+    body {
+        padding-left:0;
+        padding-right:0;
+    }
+    .navbar-fixed-top, .navbar-fixed-bottom {
+        position: fixed;
+    }
+    .navbar .nav > li > a {
+        line-height: 20px;
+        vertical-align: middle;
+    }
+    .section {
+        padding-left:20px;
+        padding-right:20px;
+    }
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .nav-collapse {
+        clear: both;
+    }
+    .nav-collapse .nav {
+        float: none;
+        margin: 0 0 10px;
+    }
+    .nav-collapse .nav > li {
+        float: none;
+    }
+    .nav-collapse, .nav-collapse.collapse {
+        width: 100%;
+        display: inherit;
+    }
+    .thumbnail .more {
+        margin-left:-21px;
+        width:40px;
+        height:40px;
+        border-radius:30px;
+        line-height: 40px;
+    }
+    .thumbnail:hover .more {
+        margin-top:-20px;
+    }
+    .newsletter form {
+        text-align:center;
+    }
+}
+@media (max-width: 767px) {
+    .info-mail {
+        width:90%;
+        padding:15px 0px;
+    }
+    .project-description {
+        padding-left:20px;
+    }
+    .price-column, .testimonial {
+        margin-top:30px;
+    }
+    .section .title h3 {
+        line-height: 1.2;
+        font-family: 'porta';
+        font-size: 20px;
+        padding-top: -20px;
+        margin-bottom: -10px;
+    }
+}
+@media (max-width: 600px) {
+    .section .title h3 {
+        line-height: 1.2;
+        font-family: 'porta';
+        font-size: 18px;
+        padding-top: -20px;
+        margin-bottom: -10px;
+    }
+}
+@media (max-width: 544px) {
+    .section .title h3 {
+        line-height: 1.2;
+        font-family: 'porta';
+        font-size: 17px;
+        padding-top: -20px;
+        margin-bottom: -10px;
+    }
+}
+@media (max-width: 519px) {
+    .section .title h3 {
+        line-height: 1.2;
+        font-family: 'porta';
+        font-size: 16px;
+        padding-top: -20px;
+        margin-bottom: -10px;
+    }
+}
+@media (max-width: 488px) {
+    .section .title h3 {
+        line-height: 1.2;
+        font-family: 'porta';
+        font-size: 15px;
+        padding-top: -20px;
+        margin-bottom: -10px;
+    }
+}
+@media (max-width: 460px) {
+    .section .title h3 {
+        line-height: 1.2;
+        font-family: 'porta';
+        font-size: 14px;
+        padding-top: -20px;
+        margin-bottom: -10px;
+    }
+}
+@media (max-width: 432px) {
+    .section .title h3 {
+        line-height: 1.2;
+        font-family: 'porta';
+        font-size: 15px;
+        padding-top: -20px;
+        margin-bottom: -10px;
+    }
+}
